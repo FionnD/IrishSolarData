@@ -79,7 +79,7 @@ export default function Sidebar() {
                                         <div className="flex h-16 shrink-0 items-center">
                                             <img
                                                 className="h-8 w-auto"
-                                                src="public/solar-energy-icon.svg"
+                                                src="/solar-energy-icon.svg"
                                                 alt="Irish Citizens' Solar Data"
                                             />
                                         </div>
