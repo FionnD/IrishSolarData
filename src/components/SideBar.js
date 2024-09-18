@@ -2,10 +2,8 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import {
     Bars3Icon,
-    ChartPieIcon,
     FolderIcon,
     HomeIcon,
-    InformationCircleIcon,
     XMarkIcon,
     ChartBarIcon,
     LightBulbIcon
@@ -75,7 +73,7 @@ export default function Sidebar() {
                                         <div className="flex h-16 shrink-0 items-center">
                                             <img
                                                 className="h-8 w-auto"
-                                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                                src="public/solar-energy-icon.svg"
                                                 alt="Your Company"
                                             />
                                         </div>
@@ -122,8 +120,8 @@ export default function Sidebar() {
                     <div className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-gray-200 bg-white px-6">
                         <div className="flex h-16 shrink-0 items-center">
                             <img
-                                className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                className="h-10 w-auto"
+                                src="/solar-energy-icon.svg"
                                 alt="Your Company"
                             />
                         </div>
