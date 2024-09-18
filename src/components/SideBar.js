@@ -74,7 +74,7 @@ export default function Sidebar() {
                                             <img
                                                 className="h-8 w-auto"
                                                 src="public/solar-energy-icon.svg"
-                                                alt="Your Company"
+                                                alt="Irish Citizens' Solar Data"
                                             />
                                         </div>
                                         <nav className="flex flex-1 flex-col">
@@ -122,7 +122,7 @@ export default function Sidebar() {
                             <img
                                 className="h-10 w-auto"
                                 src="/solar-energy-icon.svg"
-                                alt="Your Company"
+                                alt="Irish Citizens' Solar Data"
                             />
                         </div>
                         <nav className="flex flex-1 flex-col">
