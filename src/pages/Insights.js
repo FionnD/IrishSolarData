@@ -47,7 +47,7 @@ export default function Production() {
                 <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
                 {/* Main Content */}
-                <main className="lg:pr-96">
+                <main className="flex-1 lg:pr-16 px-4">
                     <div>
                         <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
                             Data Insights

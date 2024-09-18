@@ -10,7 +10,7 @@ const CustomTooltip = ({ point }) => (
 
 const LineChart = ({ data }) => {
     return (
-        <div style={{ height: '500px', width: '1400px' }}>
+        <div style={{ height: '500px', width: '100%' }}>
             <ResponsiveLine
                 data={data}
                 margin={{ top: 50, right: 110, bottom: 50, left: 60 }}

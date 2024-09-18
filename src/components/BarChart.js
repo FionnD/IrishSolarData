@@ -4,7 +4,7 @@ import { ResponsiveBar } from '@nivo/bar';
 const BarChart = ({ data }) => {
 
     return (
-        <div style={{ height: '500px', width: '1400px' }}>
+        <div style={{ height: '500px', width: '100%' }}>
             <ResponsiveBar
                 data={data}
                 keys={['systemsReported']} // Single key for "number of systems reported"
