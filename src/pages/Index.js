@@ -1,123 +1,71 @@
-import { useState } from 'react'
-import Sidebar from './components/SideBar'
-import LineChart from "./components/LineChart";
-import ChartInfoBox from "./components/ChartInfoBox";
-
-
+import { useState } from 'react';
+import Sidebar from '../components/SideBar';
 
 export default function Index() {
-    const [sidebarOpen, setSidebarOpen] = useState(false)
-
-    // Define the data outside of the return statement
-    const data_one = [
-        {
-            id: '2023',
-            data: [
-                { x: 'January', y: 4.28 },
-                { x: 'February', y: 6.62 },
-                { x: 'March', y: 11.21 },
-                { x: 'April', y: 17.69 },
-                { x: 'May', y: 23.99 },
-                { x: 'June', y: 23.87 },
-                { x: 'July', y: 18.81 },
-                { x: 'August', y: 17.44 },
-                { x: 'September', y: 14.46 },
-                { x: 'October', y: 9.65 },
-                { x: 'November', y: 4.90 },
-                { x: 'December', y: 2.65 }
-            ]
-        }
-    ];
-    const data_two = [
-        {
-            id: '2023',
-            data: [
-                { x: 'January', y: 4.28 },
-                { x: 'February', y: 6.62 },
-                { x: 'March', y: 11.21 },
-                { x: 'April', y: 17.69 },
-                { x: 'May', y: 23.99 },
-                { x: 'June', y: 23.87 },
-                { x: 'July', y: 18.81 },
-                { x: 'August', y: 17.44 },
-                { x: 'September', y: 14.46 },
-                { x: 'October', y: 9.65 },
-                { x: 'November', y: 4.90 },
-                { x: 'December', y: 2.65 }
-            ]
-        },
-        {
-            id: '2022',
-            data: [
-                { x: 'January', y: 4.46 },
-                { x: 'February', y: 6.75 },
-                { x: 'March', y: 16.45 },
-                { x: 'April', y: 15.96 },
-                { x: 'May', y: 17.50 },
-                { x: 'June', y: 17.90 },
-                { x: 'July', y: 17.45 },
-                { x: 'August', y: 19.79 },
-                { x: 'September', y: 11.59 },
-                { x: 'October', y: 7.64 },
-                { x: 'November', y: 5.14 },
-                { x: 'December', y: 3.67 }
-            ]
-        },
-        {
-            id: '2021',
-            data: [
-                { x: 'January', y: 2.04 },
-                { x: 'February', y: 3.17 },
-                { x: 'March', y: 5.73 },
-                { x: 'April', y: 12.01 },
-                { x: 'May', y: 14.66 },
-                { x: 'June', y: 14.52 },
-                { x: 'July', y: 16.57 },
-                { x: 'August', y: 14.67 },
-                { x: 'September', y: 10.65 },
-                { x: 'October', y: 9.09 },
-                { x: 'November', y: 5.69 },
-                { x: 'December', y: 3.47 }
-            ]
-        }
-    ];
-
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
     return (
-
-
-
-
         <>
             <div className="flex mt-9">
                 {/* Sidebar */}
                 <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
                 {/* Main Content */}
-                <main className="lg:pr-96">
-                    <header>
-                        <h1 className="text-2xl font-semibold mb-4">Community Solar Data</h1>
-                    </header>
-
-                    {/* Your other content here */}
-                    <div className="w-full">
-                        <div>
-                            <ChartInfoBox title="Average solar production in 2023" description="This is the total megawatts produced each month by all community members." />
-                            <LineChart data={data_one} />
+                <main className="flex-1">
+                    <div className="mb-7">
+                        <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:tracking-tight">
+                            Irish Citizens' Solar Data
+                        </h2>
+                    </div>
+                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7">
+                        <div className="px-4 py-5 sm:p-6">
+                            <p className="text-xl mb-3">Welcome! 👋</p>
+                            <p className="mb-3">
+                                This website provides data from individuals in Ireland who have publicly shared their solar power information. It's designed to help you understand and plan your own solar projects.
+                            </p>
+                            <p>
+                                Data is reported from users on{' '}
+                                <a
+                                    href="https://boards.ie/renewable-energies-community"
+                                    className="text-blue-500 hover:underline"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    boards.ie Renewables Energies Community
+                                </a>{' '}
+                                and the{' '}
+                                <a
+                                    href="https://www.facebook.com/groups/irishsolarowners"
+                                    className="text-blue-500 hover:underline"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Irish Solar Owners Facebook Group
+                                </a>.
+                            </p>
                         </div>
                     </div>
-                    <div className="w-full">
-                        <div>
-                            <ChartInfoBox title="Solar Production by year" description="This is the total megawatts produced each month by all community members, compared each year." />
-                            <LineChart data={data_two} />
+                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7">
+                        <div className="px-4 py-5 sm:p-6">
+                            <p>
+                                So far, <b>1228</b> individuals have shared their data, producing a total of <b>2608 MegaWatts</b>, which is enough to power <b>Galway city for two weeks</b>.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7">
+                        <div className="px-4 py-5 sm:p-6">
+                            <p>
+                                This is an open source website, hosted on Vecel. You can reach out at xxx@gmail.com
+                            </p>
                         </div>
                     </div>
                 </main>
-
-
-
             </div>
+            <style jsx global>{`
+                body {
+                    background-color: #f3f4f6; /* Or any other shade of grey you prefer */
+                }
+            `}</style>
         </>
-
-    )
+    );
 }
