@@ -17,7 +17,7 @@ export default function Index() {
                             Irish Citizens' Solar Data
                         </h2>
                     </div>
-                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7">
+                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7 mr-10">
                         <div className="px-4 py-5 sm:p-6">
                             <p className="text-xl mb-3">Welcome! 👋</p>
                             <p className="mb-3">
@@ -45,14 +45,14 @@ export default function Index() {
                             </p>
                         </div>
                     </div>
-                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7">
+                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7 mr-10">
                         <div className="px-4 py-5 sm:p-6">
                             <p>
                                 So far, <b>1228</b> individuals have shared their data, producing a total of <b>2608 MegaWatts</b>, which is enough to power <b>Galway city for two weeks</b>.
                             </p>
                         </div>
                     </div>
-                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7">
+                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7 mr-10">
                         <div className="px-4 py-5 sm:p-6">
                             <p>
                                 This is an open source website, hosted on Vecel. You can reach out at xxx@gmail.com
