@@ -55,8 +55,10 @@ export default function Index() {
                     <div className="overflow-hidden rounded-lg bg-white shadow mt-7 mr-10">
                         <div className="px-4 py-5 sm:p-6">
                             <p>
-                                This is an open source website, hosted on Vecel. You can reach out at xxx@gmail.com
+                                This is an <a href="https://github.com/FionnD/IrishSolarData" className="text-blue-500 hover:underline">open source</a> website, hosted on Vercel.
+                                You can reach out at <a href="mailto:irishsolardata.stout507@passinbox.com" className="text-blue-500 hover:underline">irishsolardata.stout507@passinbox.com</a>.
                             </p>
+
                         </div>
                     </div>
                 </main>
