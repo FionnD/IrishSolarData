@@ -6,14 +6,16 @@ import {
     HomeIcon,
     XMarkIcon,
     ChartBarIcon,
-    LightBulbIcon
+    LightBulbIcon,
+    PlusIcon,
 } from '@heroicons/react/24/outline'
 
 const navigation = [
     { name: 'Home', href: '/', icon: HomeIcon, current: true },
     { name: 'Production', href: './Production', icon: ChartBarIcon, current: false },
     { name: 'Infrastructure', href: 'https://docs.google.com/spreadsheets/d/126q1if4RJqtmB1z-M6cxuXr6TknY_SwKuwAjxZsxh8E/edit?gid=0#gid=0', icon: FolderIcon, current: false },
-    { name: 'Insights', href: '/Insights', icon: LightBulbIcon, current: false }
+    { name: 'Insights', href: '/Insights', icon: LightBulbIcon, current: false },
+    { name: 'Contribute', href: '/Contribute', icon: PlusIcon, current: false }
 ];
 
 function classNames(...classes) {

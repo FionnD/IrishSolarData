@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Production from "./pages/Production";
 import Infrastructure from "./pages/Infrastructure";
-import About from "./pages/About";
+import Contribute from "./pages/Contribute";
 import Insights from "./pages/Insights";
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
                 <Route path="Production" element={<Production />} />
                 <Route path="Infrastructure" element={<Infrastructure />} />
                 <Route path="Insights" element={<Insights />} />
-                <Route path="About" element={<About />} />
+                <Route path="Contribute" element={<Contribute />} />
 
             </Routes>
         </BrowserRouter>
