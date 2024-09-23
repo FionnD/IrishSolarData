@@ -1,93 +1,42 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import Sidebar from '../components/SideBar';
 import ChartBox from "../components/ChartBox";
 import LineChart from "../components/LineChart";
+import data from '../data/Production/DetailedProduction.json';
+import MultiYearProduction from "../data/Production/MultiYearProduction.json";
+import production_this_year from "../data/Production/ProductionThisYear.json";
+import { MantineReactTable, useMantineReactTable } from 'mantine-react-table';
 
 export default function Production() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    // Define the data outside of the return statement
-    const production_this_year = [
-        {
-            id: '2024',
-            data: [
-                { x: 'January', y: 22.28 },
-                { x: 'February', y: 59.62 },
-                { x: 'March', y: 186.51 },
-                { x: 'April', y: 220.83 },
-                { x: 'May', y: 250.83 },
-                { x: 'June', y: 319.10 },
-                { x: 'July', y: 287.19 },
-                { x: 'August', y: 259.57 }
-            ]
-        }
-    ];
-    const data_two = [
-        {
-            id: '2024',
-            data: [
-                { x: 'January', y: 4.79 },
-                { x: 'February', y: 6.63 },
-                { x: 'March', y: 8.51 },
-                { x: 'April', y: 11.83 },
-                { x: 'May', y: 12.80 },
-                { x: 'June', y: 13.10 },
-                { x: 'July', y: 10.19 },
-                { x: 'August', y: 8.57 }
-            ]
-        },
-        {
-            id: '2023',
-            "data": [
-                { x: 'January', y: 4.51 },
-                { x: 'February', y: 6.90 },
-                { x: 'March', y: 11.68 },
-                { x: 'April', y: 18.39 },
-                { x: 'May', y: 24.93 },
-                { x: 'June', y: 24.79 },
-                { x: 'July', y: 19.54 },
-                { x: 'August', y: 18.20 },
-                { x: 'September', y: 15.05 },
-                { x: 'October', y: 10.30 },
-                { x: 'November', y: 5.25 },
-                { x: 'December', y: 2.84 }
-            ]
-        },
-        {
-            id: '2022',
-            data: [
-                { x: 'January', y: 4.45 },
-                { x: 'February', y: 6.74 },
-                { x: 'March', y: 16.45 },
-                { x: 'April', y: 15.96 },
-                { x: 'May', y: 17.50 },
-                { x: 'June', y: 17.90 },
-                { x: 'July', y: 18.27 },
-                { x: 'August', y: 20.72 },
-                { x: 'September', y: 12.18 },
-                { x: 'October', y: 8.05 },
-                { x: 'November', y: 5.40 },
-                { x: 'December', y: 3.87 }
-            ]
-        },
-        {
-            id: '2021',
-            data: [
-                { x: 'January', y: 2.04 },
-                { x: 'February', y: 3.17 },
-                { x: 'March', y: 5.73 },
-                { x: 'April', y: 12.01 },
-                { x: 'May', y: 14.66 },
-                { x: 'June', y: 14.52 },
-                { x: 'July', y: 16.57 },
-                { x: 'August', y: 14.67 },
-                { x: 'September', y: 10.65 },
-                { x: 'October', y: 9.09 },
-                { x: 'November', y: 5.69 },
-                { x: 'December', y: 3.47 }
-            ]
-        }
-    ];
 
+    const columns = useMemo(
+        () => [
+            { accessorKey: 'User', header: 'User', size: 2 },
+            { accessorKey: 'SystemSize', header: 'System Size', size: 2 },
+            { accessorKey: 'County', header: 'County', size: 2,},
+            { accessorKey: 'Orientation', header: 'Orientation', size: 2 },
+            { accessorKey: 'January', header: 'Jan', size: 2 },
+            { accessorKey: 'February', header: 'Feb', size: 2 },
+            { accessorKey: 'March', header: 'Mar', size: 2 },
+            { accessorKey: 'April', header: 'Apr', size: 2 },
+            { accessorKey: 'May', header: 'May', size: 2 },
+            { accessorKey: 'June', header: 'Jun', size: 2 },
+            { accessorKey: 'July', header: 'Jul', size: 2 },
+            { accessorKey: 'August', header: 'Aug', size: 2 },
+            { accessorKey: 'September', header: 'Sep', size: 2 },
+            { accessorKey: 'October', header: 'Oct', size: 2 },
+            { accessorKey: 'November', header: 'Nov', size: 2 },
+            { accessorKey: 'December', header: 'Dec', size: 2 },
+        ],
+        []
+    );
+
+    const table = useMantineReactTable({
+        columns,
+        data,
+        initialState: { density: 'xs' },
+    });
 
     return (
         <>
@@ -104,12 +53,35 @@ export default function Production() {
                     </div>
 
                     <div className="space-y-8">
-                        <ChartBox title="Total Solar Production in 2024" description="This figure represents the total megawatts produced each month by members of both the Facebook group and the Boards.ie community." chart={<LineChart data={production_this_year} />} />
+                        <ChartBox
+                            title="Total Solar Production in 2024"
+                            description="This figure represents the total megawatts produced each month by members of both the Facebook group and the Boards.ie community."
+                            chart={<LineChart data={production_this_year} />}
+                        />
 
-                        <ChartBox title="Historical Solar Production by Year" description="This represents the total megawatts produced by the Boards.ie community over the previous years." chart={<LineChart data={data_two} />} />
+                        <ChartBox
+                            title="Historical Solar Production by Year"
+                            description="This represents the total megawatts produced by the Boards.ie community over the previous years."
+                            chart={<LineChart data={MultiYearProduction} />}
+                        />
+                    </div>
+
+                    <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow mt-7">
+                        <div className="px-4 py-5 sm:px-6">
+                            <h1 className="text-xl font-semibold mb-4">Detailed User Production</h1>
+                            <div className="mt-2 text-sm">
+                                <p>This table shows detailed production, month by month, from users on boards.ie.</p>
+                            </div>
+                        </div>
+                        <div className="px-4 py-5 sm:px-6 max-w-screen-lg mx-auto">
+                            <div > {/* Adjust the minimum width for a compact view */}
+                                <MantineReactTable table={table} />
+                            </div>
+                        </div>
                     </div>
                 </main>
             </div>
+
             <style jsx global>{`
               body {
                 background-color: #f3f4f6;

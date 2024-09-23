@@ -1,5 +1,4 @@
 import React from 'react';
-import LineChart from "./LineChart";
 
 export default function ChartBox({ title, description, chart }) {
     return (
