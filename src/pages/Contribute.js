@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import Sidebar from '../components/SideBar';
 
-
-
 export default function Contribute() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -22,25 +20,33 @@ export default function Contribute() {
                     <div className="overflow-hidden rounded-lg bg-white shadow mt-7">
                         <div className="px-4 py-5 sm:p-6">
                             <p className="text-xl mb-3">Solar production data ☀️ </p>
-                            <p>To contribute the amount of energy your system has produced this month, please complete the form{' '}
-                                <a className="text-blue-500 hover:underline"
-                                   href="https://docs.google.com/forms/d/e/1FAIpQLSd-R-6BFl80pFZG0HO5kIpjwXm2PskZDzj598z-ElwDSgyDDg/closedform"
-                                   target="_blank"
-                                   rel="noopener noreferrer">here
-                                </a>{' '}.
+                            <p>
+                                To contribute the amount of energy your system has produced this month, please complete the form below.
                             </p>
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSd-R-6BFl80pFZG0HO5kIpjwXm2PskZDzj598z-ElwDSgyDDg/closedform"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-4 inline-flex items-center justify-center px-4 py-2 text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                            >
+                                Open Form
+                            </a>
                         </div>
                     </div>
                     <div className="overflow-hidden rounded-lg bg-white shadow mt-7">
                         <div className="px-4 py-5 sm:p-6">
                             <p className="text-xl mb-3">Installation details 🔨️ </p>
-                            <p>To share how you built your solar system, you can join this board's thread{' '}
-                                <a className="text-blue-500 hover:underline"
-                                   href="https://www.boards.ie/discussion/2058225023/solar-performance-spreadsheet-analysis-and-data-sharing/"
-                                   target="_blank"
-                                   rel="noopener noreferrer">here
-                                </a>{' '}.
+                            <p>
+                                To share how you built your solar system, you can join this board's thread below.
                             </p>
+                            <a
+                                href="https://www.boards.ie/discussion/2058225023/solar-performance-spreadsheet-analysis-and-data-sharing/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="mt-4 inline-flex items-center justify-center px-4 py-2 text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                            >
+                                Join Thread
+                            </a>
                         </div>
                     </div>
                 </main>
