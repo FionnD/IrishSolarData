@@ -56,9 +56,10 @@ export default function Production() {
 
                     <ChartBox
                         title="Percentage of Maximum Yield Achieved"
-                        description="This shows the percentage of energy generated relative to the system's maximum capacity. For example, a 5KW system can theoretically produce 5KW per hour, multiplied by the hours in a day of sunlight, and the number of days in a month."
+                        description="This chart shows the percentage of energy generated compared to the system's maximum capacity. For example, a 5 kW system can produce up to 5 kW each hour. The total output depends on the number of sunny hours in a day and the number of days in the month."
                         chart={<LineChartPercentage data={data_one} />}
                     />
+
 
                     <ChartBox
                         title="Average Size of System "
