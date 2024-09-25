@@ -5,7 +5,7 @@ import LineChart from "../components/LineChart";
 import data from '../data/Production/DetailedProduction.json';
 import MultiYearProduction from "../data/Production/MultiYearProduction.json";
 import production_this_year from "../data/Production/ProductionThisYear.json";
-import { MantineReactTable, useMantineReactTable } from 'mantine-react-table';
+import { MantineReactTable } from 'mantine-react-table';
 
 export default function Production() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -31,12 +31,6 @@ export default function Production() {
         ],
         []
     );
-
-    const table = useMantineReactTable({
-        columns,
-        data,
-        initialState: { density: 'xs' },
-    });
 
     return (
         <>
@@ -73,9 +67,33 @@ export default function Production() {
                                 <p>This table shows detailed production, month by month, from users on boards.ie.</p>
                             </div>
                         </div>
-                        <div className="px-4 py-5 sm:px-6 max-w-screen-lg mx-auto">
-                            <div > {/* Adjust the minimum width for a compact view */}
-                                <MantineReactTable table={table} />
+                        <div className="px-4 py-5 sm:px-6 w-full">
+                            <div className="w-full">
+                                <MantineReactTable
+                                    columns={columns}
+                                    data={data}
+                                    mantinePaperProps={{
+                                        shadow: 'none',
+                                        sx: {
+                                            borderRadius: '0',
+                                            border: '1px dashed #e0e0e0',
+                                            width: '100%',
+                                        },
+                                    }}
+                                    mantineTableContainerProps={{
+                                        sx: {
+                                            maxWidth: '100%',
+                                        },
+                                    }}
+                                    mantineTableProps={{
+                                        striped: true,
+                                        sx: {
+                                            tableLayout: 'auto',
+                                            width: '100%',
+                                        },
+                                    }}
+                                    initialState={{density: 'xs'}}
+                                />
                             </div>
                         </div>
                     </div>
