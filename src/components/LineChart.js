@@ -79,7 +79,8 @@ const LineChart = ({ data }) => {
                 enableArea={true}
                 curve="natural"
                 areaOpacity={0.5}
-                tooltip={CustomTooltip} // Add this line to use the custom tooltip
+                tooltip={CustomTooltip}
+                colors={{ scheme: 'category10' }} // Using a distinct color scheme for lines
             />
         </div>
     );

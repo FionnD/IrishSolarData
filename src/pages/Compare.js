@@ -52,7 +52,7 @@ export default function Compare() {
                     <div className="overflow-hidden rounded-lg bg-white shadow mt-7 mr-10">
                         <div className="px-4 py-5 sm:p-6">
                             <p className="mb-3">
-                                This page lets you compare your solar system’s output with the data we’ve collected. Find out whether your system is performing above or below average or predict what outputs you might achieve.
+                                This page allows you to compare your solar system’s performance with data collected from other users. Contributors have shared their system sizes, orientations, and monthly power generation. By entering your system’s size, you can see a predicted monthly output and discover whether your system is performing above or below average. You can also use this tool to estimate the potential output of a new system.
                             </p>
                             <p>
                                 This data reflects solar production over the past 12 months. While some years yield better results than others, take these predictions with a grain of salt.

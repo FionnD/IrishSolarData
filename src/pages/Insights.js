@@ -9,16 +9,20 @@ export default function Production() {
     // Define the data outside of the return statement
     const data_one = [
         {
-            id: '2023',
+            id: '2024',
             data: [
-                { x: 'January', y: 30 },
-                { x: 'February', y: 38 },
-                { x: 'March', y: 62 },
-                { x: 'April', y: 96 },
-                { x: 'May', y: 110 },
-                { x: 'June', y: 120 },
-                { x: 'July', y: 110 },
-                { x: 'August', y: 103 }
+                { x: 'January', y: 28.95 },
+                { x: 'February', y: 37.78 },
+                { x: 'March', y: 61.89 },
+                { x: 'April', y: 96.18 },
+                { x: 'May', y: 109.44 },
+                { x: 'June', y: 120.27 },
+                { x: 'July', y: 109.54 },
+                { x: 'August', y: 102.83 },
+                { x: 'September', y: 75.09 },
+                { x: 'October', y: 49.60 },
+                { x: 'November', y: 21.27 }
+
             ]
         }
     ];
@@ -56,7 +60,7 @@ export default function Production() {
 
                     <ChartBox
                         title="Percentage of Maximum Yield Achieved"
-                        description="This chart shows the percentage of energy generated compared to the system's maximum capacity. For example, a 5 kW system can produce up to 5 kW each hour. The total output depends on the number of sunny hours in a day and the number of days in the month."
+                        description="This chart shows the average “total yield factor,” which helps estimate energy generation. For example, if a 5kW solar system produces 500kWh in a month, its yield factor is 10. Use this number to predict how much energy your system might produce."
                         chart={<LineChartPercentage data={data_one} />}
                     />
 
