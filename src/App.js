@@ -4,6 +4,7 @@ import Index from "./pages/Index";
 import Production from "./pages/Production";
 import Contribute from "./pages/Contribute";
 import Insights from "./pages/Insights";
+import Compare from "./pages/Compare";
 
 export default function App() {
     return (
@@ -13,6 +14,7 @@ export default function App() {
                 <Route path="Production" element={<Production />} />
                 <Route path="Insights" element={<Insights />} />
                 <Route path="Contribute" element={<Contribute />} />
+                <Route path="Compare" element={<Compare />} />
 
             </Routes>
         </BrowserRouter>

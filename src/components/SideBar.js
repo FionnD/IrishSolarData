@@ -8,6 +8,7 @@ import {
     ChartBarIcon,
     LightBulbIcon,
     PlusIcon,
+    DocumentCheckIcon,
 } from '@heroicons/react/24/outline'
 
 const navigation = [
@@ -15,6 +16,7 @@ const navigation = [
     { name: 'Production', href: './Production', icon: ChartBarIcon, current: false },
     { name: 'Infrastructure', href: 'https://docs.google.com/spreadsheets/d/126q1if4RJqtmB1z-M6cxuXr6TknY_SwKuwAjxZsxh8E/edit?gid=0#gid=0', icon: FolderIcon, current: false },
     { name: 'Insights', href: '/Insights', icon: LightBulbIcon, current: false },
+    { name: 'Compare', href: '/Compare', icon: DocumentCheckIcon, current: false },
     { name: 'Contribute', href: '/Contribute', icon: PlusIcon, current: false }
 ];
 
