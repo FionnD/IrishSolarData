@@ -60,7 +60,7 @@ export default function Production() {
 
                     <ChartBox
                         title="Percentage of Maximum Yield Achieved"
-                        description="This chart shows the average “total yield factor,” which helps estimate energy generation. For example, if a 5kW solar system produces 500kWh in a month, its yield factor is 10. Use this number to predict how much energy your system might produce."
+                        description="This chart shows the average “total yield factor,” which helps estimate energy generation. For example, if a 5kW solar system produces 500kWh in a month, its yield factor is 10. You can use these figures to estimate how much your system might produce, go to the Compare page to input your own data."
                         chart={<LineChartPercentage data={data_one} />}
                     />
 
