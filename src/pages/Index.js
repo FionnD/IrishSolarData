@@ -26,7 +26,7 @@ export default function Index() {
                             <p>
                                 Data is reported from users on{' '}
                                 <a
-                                    href="https://boards.ie/renewable-energies-community"
+                                    href="https://www.boards.ie/categories/renewable-energies"
                                     className="text-blue-500 hover:underline"
                                     target="_blank"
                                     rel="noopener noreferrer"
