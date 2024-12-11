@@ -1,4 +1,5 @@
 import ReactDOM from "react-dom/client";
+import { Analytics } from "@vercel/analytics/react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Production from "./pages/Production";
@@ -18,6 +19,7 @@ export default function App() {
 
             </Routes>
         </BrowserRouter>
+    <Analytics />
     );
 }
 
