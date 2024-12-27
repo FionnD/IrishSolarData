@@ -14,7 +14,7 @@ export default function Index() {
                 <main className="flex-1">
                     <div className="mb-7">
                         <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:tracking-tight">
-                            Irish Citizens' Solar Data
+                            Irish Citizens Solar Data
                         </h2>
                     </div>
                     <div className="overflow-hidden rounded-lg bg-white shadow mt-7 mr-10">
