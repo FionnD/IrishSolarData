@@ -45,13 +45,7 @@ export default function Index() {
                             </p>
                         </div>
                     </div>
-                    <div className="overflow-hidden rounded-lg bg-white shadow mt-7 mr-10">
-                        <div className="px-4 py-5 sm:p-6">
-                            <p>
-                                So far, <b>1228</b> individuals have shared their data, producing a total of <b>2608 MegaWatts</b>, which is enough to power <b>Galway city for two weeks</b>.
-                            </p>
-                        </div>
-                    </div>
+
                     <div className="overflow-hidden rounded-lg bg-white shadow mt-7 mr-10">
                         <div className="px-4 py-5 sm:p-6">
                             <p>
