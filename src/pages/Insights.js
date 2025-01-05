@@ -21,7 +21,8 @@ export default function Production() {
                 { x: 'August', y: 102.83 },
                 { x: 'September', y: 75.09 },
                 { x: 'October', y: 49.60 },
-                { x: 'November', y: 21.27 }
+                { x: 'November', y: 21.27 },
+                { x: 'December', y: 24.00 }
 
             ]
         }

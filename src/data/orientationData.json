@@ -12,7 +12,7 @@
     "September": 81.40176224,
     "October": 54.49100765,
     "November": 24.97841778,
-    "December": null
+    "December": 25
   },
   "East": {
     "January": null,
@@ -40,7 +40,7 @@
     "September": 75.13640239,
     "October": 41.15270444,
     "November": 15.09803922,
-    "December": null
+    "December": 9
   },
   "North": {
     "January": null,
@@ -68,7 +68,7 @@
     "September": 78.45574543,
     "October": 54.74072335,
     "November": 25.40669342,
-    "December": null
+    "December": 15
   },
   "South-West": {
     "January": 31.49349673,
@@ -82,7 +82,7 @@
     "September": 79.13347342,
     "October": 50.7327329,
     "November": 23.26245481,
-    "December": null
+    "December": 32
   },
   "West,East": {
     "January": 17.30915071,
@@ -96,7 +96,7 @@
     "September": 64.53995339,
     "October": 37.6542431,
     "November": 14.44265229,
-    "December": null
+    "December": 32
   },
   "South,West": {
     "January": 27.41005609,
@@ -110,7 +110,7 @@
     "September": 68.6237923,
     "October": 49.79851337,
     "November": 15.72041097,
-    "December": null
+    "December": 12
   }
 }
 }

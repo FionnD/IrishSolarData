@@ -2,17 +2,18 @@
   {
     "id": "2024",
     "data": [
-      { "x": "January", "y": 4.79 },
-      { "x": "February", "y": 6.63 },
-      { "x": "March", "y": 8.51 },
-      { "x": "April", "y": 11.83 },
-      { "x": "May", "y": 12.80 },
-      { "x": "June", "y": 13.10 },
-      { "x": "July", "y": 10.19 },
-      { "x": "August", "y": 8.57 },
-      { "x": "September", "y": 6.14 },
-      { "x": "October", "y": 2.79 },
-      { "x": "November", "y": 0.88 }
+      { "x": "January", "y": 5.26 },
+      { "x": "February", "y": 7.18 },
+      { "x": "March", "y": 9.73 },
+      { "x": "April", "y": 14.75 },
+      { "x": "May", "y": 16.08 },
+      { "x": "June", "y": 16.93 },
+      { "x": "July", "y": 13.34 },
+      { "x": "August", "y": 12.51 },
+      { "x": "September", "y": 8.71 },
+      { "x": "October", "y": 5.68 },
+      { "x": "November", "y": 2.04 },
+      { "x": "November", "y": 1.18 }
 
     ]
   },
